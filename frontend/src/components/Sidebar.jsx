@@ -95,7 +95,7 @@ export default function Sidebar() {
           <div className="sidebar-logo-icon">
             <Droplets size={22} color="white" />
           </div>
-          <div className="sidebar-logo-title">KIWASCO</div>
+          <div className="sidebar-logo-title">HydroSense</div>
           <div className="sidebar-logo-sub">FORECASTING SYSTEM</div>
         </div>
 
