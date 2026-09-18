@@ -84,10 +84,10 @@ export default function Login() {
           }}>
             <Droplets size={30} color="white" />
           </div>
-          <h1 style={{ fontSize: 26, fontWeight: 800, marginBottom: 6 }}>KIWASCO</h1>
+          <h1 style={{ fontSize: 26, fontWeight: 800, marginBottom: 6 }}>HydroSense</h1>
           <p style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.5 }}>
             Sales &amp; Revenue Forecasting System<br/>
-            <span style={{ fontSize: 11 }}>Kisumu Water &amp; Sewerage Company</span>
+            <span style={{ fontSize: 11 }}> Water &amp; Sewerage Company</span>
           </p>
         </div>
 
