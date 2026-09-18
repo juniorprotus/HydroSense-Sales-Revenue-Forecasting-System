@@ -1,4 +1,4 @@
-# KIWASCO Sales & Revenue Forecasting System
+# HydroSense Sales & Revenue Forecasting System
 
 An AI-powered digital transformation project for the Kisumu Water & Sewerage Company (KIWASCO). This system provides actionable insights into water demand, revenue collection, and non-revenue water (NRW) losses using Facebook (Meta) Prophet machine learning models.
 
