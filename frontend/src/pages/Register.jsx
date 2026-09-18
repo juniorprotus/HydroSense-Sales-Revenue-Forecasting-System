@@ -54,7 +54,7 @@ export default function Register() {
             <Droplets size={26} color="white" />
           </div>
           <h1 style={{ fontSize: 24, fontWeight: 800, marginBottom: 4 }}>Create Account</h1>
-          <p style={{ fontSize: 13, color: 'var(--text-muted)' }}>Join the KIWASCO Forecasting Platform</p>
+          <p style={{ fontSize: 13, color: 'var(--text-muted)' }}>Join the HydroSense Forecasting Platform</p>
         </div>
 
         <form onSubmit={handleSubmit}>
@@ -84,7 +84,7 @@ export default function Register() {
             <div style={{ position: 'relative' }}>
               <input className="form-input" type="email" style={{ paddingLeft: 38 }}
                 value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
-                placeholder="johndoe@kiwasco.co.ke" />
+                placeholder="johndoe@hydrosense.co.ke" />
               <Mail size={14} style={{ position: 'absolute', left: 14, top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
             </div>
           </div>
