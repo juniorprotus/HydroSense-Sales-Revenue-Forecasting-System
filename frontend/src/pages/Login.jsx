@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 
-import axios from 'axios'
+import api from '../api/client'
 import toast from 'react-hot-toast'
 import { Droplets, Eye, EyeOff, LogIn } from 'lucide-react'
 
@@ -48,7 +48,7 @@ export default function Login() {
     setSettingUp(true)
     const tid = toast.loading('Initializing database & demo accounts...')
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/setup-cloud-demo`)
+      const res = await api.post('/api/setup-cloud-demo')
       toast.success(res.data.detail || 'Database initialized!', { id: tid })
     } catch (err) {
       toast.error(err.response?.data?.detail || 'Setup failed. Check backend logs.', { id: tid })

@@ -16,7 +16,7 @@ This project was built to transition water utilities from reactive to proactive 
 
 ## How to Run Locally
 
-Because this project is designed to be **completely free** with zero credit card requirements, the backend uses a local SQLite database file (`hydrosense.db`). This means you don't have to install PostgreSQL or configure any complex database connections!
+Because this project is designed to be **completely free** with zero credit card requirements, the backend uses a local SQLite database file (`kiwasco.db`). This means you don't have to install PostgreSQL or configure any complex database connections!
 
 ### 1. Start the Backend
 The backend powers all the data, Prophet Machine Learning forecasts, and the API.
