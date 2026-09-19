@@ -64,11 +64,11 @@ def export_excel(
 
     wb = Workbook()
     ws = wb.active
-    ws.title = f"KIWASCO Report {yr}"
+    ws.title = f"HydroSense Report {yr}"
 
     # === Header branding ===
     ws.merge_cells("A1:G1")
-    ws["A1"] = "KIWASCO — Kisumu Water & Sewerage Company"
+    ws["A1"] = "HydroSense — Water & Sewerage Utility Forecasting"
     ws["A1"].font = Font(bold=True, size=14, color="FFFFFF")
     ws["A1"].fill = PatternFill("solid", fgColor="1A56DB")
     ws["A1"].alignment = Alignment(horizontal="center")
@@ -125,7 +125,7 @@ def export_excel(
     buf = io.BytesIO()
     wb.save(buf)
     buf.seek(0)
-    filename = f"KIWASCO_Report_{yr}.xlsx"
+    filename = f"HydroSense_Report_{yr}.xlsx"
     return Response(
         content=buf.read(),
         media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",

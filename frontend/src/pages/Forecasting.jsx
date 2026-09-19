@@ -116,7 +116,7 @@ export default function Forecasting() {
       <div className="page-header">
         <div>
           <div className="page-header-title">AI Forecasting Engine</div>
-          <div className="page-header-sub">Holt-Winters powered predictions for KIWASCO revenue, demand, defaults &amp; NRW</div>
+          <div className="page-header-sub">Holt-Winters powered predictions for HydroSense revenue, demand, defaults &amp; NRW</div>
         </div>
       </div>
 

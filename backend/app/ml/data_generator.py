@@ -1,5 +1,5 @@
 """
-Synthetic data generator for KIWASCO billing system.
+Synthetic data generator for HydroSense billing system.
 Models real-world patterns: seasonal demand, zone demographics, default rates.
 """
 import random
@@ -9,7 +9,7 @@ from dateutil.relativedelta import relativedelta
 import pandas as pd
 import numpy as np
 
-# ── KIWASCO zone definitions ──────────────────────────────────────────────────
+# ── HydroSense zone definitions ───────────────────────────────────────────────
 ZONES = [
     {"name": "Central Business District", "population": 45000, "area_sqkm": 5.2, "target_monthly_revenue": 15000000},
     {"name": "Milimani & Suburbs", "population": 25000, "area_sqkm": 8.1, "target_monthly_revenue": 8500000},
@@ -142,5 +142,5 @@ def generate_bills(customer_id: int, zone_name: str, ctype: str, start_month: da
     return bills
 
 def get_zone_customer_count(zone_name: str, population: int) -> int:
-    """Approx 1 connection per 5.2 people (KIWASCO avg)."""
+    """Approx 1 connection per 5.2 people (HydroSense utility avg)."""
     return int(population / 5.2)

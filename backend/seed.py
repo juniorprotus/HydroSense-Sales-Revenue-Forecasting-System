@@ -1,5 +1,5 @@
 """
-seed.py — Populate KIWASCO database with synthetic billing data.
+seed.py — Populate HydroSense database with synthetic billing data.
 Run: python seed.py
 
 Generates:
@@ -45,7 +45,7 @@ def seed():
             print("Database already seeded - skipping.")
             return
 
-        print("Seeding KIWASCO database...")
+        print("Seeding HydroSense database...")
 
         # ── Zones ─────────────────────────────────────────────────────────
         zone_objs = []
@@ -59,37 +59,37 @@ def seed():
         # ── Users ─────────────────────────────────────────────────────────
         users = [
             models.User(
-                username="admin", email="admin@kiwasco.go.ke",
-                full_name="KIWASCO System Administrator",
+                username="admin", email="admin@hydrosense.io",
+                full_name="HydroSense System Administrator",
                 hashed_password=get_password_hash("admin1234"),
                 role="admin", is_active=True,
             ),
             models.User(
-                username="analyst", email="analyst@kiwasco.go.ke",
+                username="analyst", email="analyst@hydrosense.io",
                 full_name="Revenue Analyst",
                 hashed_password=get_password_hash("analyst1234"),
                 role="analyst", is_active=True,
             ),
             models.User(
-                username="steward", email="steward@kiwasco.go.ke",
+                username="steward", email="steward@hydrosense.io",
                 full_name="Data Quality Steward",
                 hashed_password=get_password_hash("steward1234"),
                 role="data_steward", is_active=True,
             ),
             models.User(
-                username="revenue", email="revenue@kiwasco.go.ke",
+                username="revenue", email="revenue@hydrosense.io",
                 full_name="Revenue Officer",
                 hashed_password=get_password_hash("revenue1234"),
                 role="revenue_officer", is_active=True,
             ),
             models.User(
-                username="field", email="field@kiwasco.go.ke",
+                username="field", email="field@hydrosense.io",
                 full_name="Field Operations Officer",
                 hashed_password=get_password_hash("field1234"),
                 role="field_officer", is_active=True,
             ),
             models.User(
-                username="viewer", email="viewer@kiwasco.go.ke",
+                username="viewer", email="viewer@hydrosense.io",
                 full_name="Management Viewer",
                 hashed_password=get_password_hash("viewer1234"),
                 role="viewer", is_active=True,
@@ -137,7 +137,7 @@ def seed():
 
         # ── Alerts ────────────────────────────────────────────────────────
         alerts_data = [
-            {"zone_id": None, "message": "System initialized with synthetic KIWASCO billing data.",
+            {"zone_id": None, "message": "System initialized with synthetic HydroSense billing data.",
              "threshold_type": "info", "severity": "info"},
             {"zone_id": zone_objs[3].id, "message": f"{zone_objs[3].name}: NRW rate exceeds 35% threshold. Pipe inspection recommended.",
              "threshold_type": "high_nrw", "severity": "critical"},

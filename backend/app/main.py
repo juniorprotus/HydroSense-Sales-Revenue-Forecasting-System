@@ -7,8 +7,8 @@ from app.routers import auth, zones, customers, bills, forecasts, dashboard, rep
 import logging
 
 app = FastAPI(
-    title="KIWASCO Sales & Revenue Forecasting API",
-    description="AI-powered forecasting system for Kisumu Water & Sewerage Company",
+    title="HydroSense Sales & Revenue Forecasting API",
+    description="AI-powered sales and revenue forecasting system for water utilities",
     version="1.0.0",
     docs_url="/api/docs",
     redoc_url="/api/redoc",
@@ -55,7 +55,7 @@ app.include_router(meter_readings.router)
 @app.get("/")
 def root():
     return {
-        "system": "KIWASCO Sales & Revenue Forecasting System",
+        "system": "HydroSense Sales & Revenue Forecasting System",
         "version": "1.0.0",
         "status": "operational",
         "docs": "/api/docs",
@@ -87,12 +87,12 @@ def setup_cloud_demo():
         demos = [
             {"username": "admin", "password": "admin1234", "role": "admin", "full_name": "System Admin"},
             {"username": "analyst", "password": "analyst1234", "role": "analyst", "full_name": "Data Analyst"},
-            {"username": "viewer", "password": "viewer1234", "role": "viewer", "full_name": "KIWASCO Viewer"},
+            {"username": "viewer", "password": "viewer1234", "role": "viewer", "full_name": "HydroSense Viewer"},
         ]
         for d in demos:
             user = User(
                 username=d["username"],
-                email=f"{d['username']}@kiwasco.co.ke",
+                email=f"{d['username']}@hydrosense.io",
                 full_name=d["full_name"],
                 hashed_password=get_password_hash(d["password"]),
                 role=d["role"]

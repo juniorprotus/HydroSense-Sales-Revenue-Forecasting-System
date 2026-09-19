@@ -20,7 +20,7 @@ export default function Login() {
     setLoading(true)
     try {
       await login(form.username, form.password)
-      toast.success('Welcome to KIWASCO System!')
+      toast.success('Welcome to HydroSense!')
       navigate('/')
     } catch (err) {
       toast.error(err.response?.data?.detail || 'Login failed. Check credentials.')
@@ -87,7 +87,7 @@ export default function Login() {
           <h1 style={{ fontSize: 26, fontWeight: 800, marginBottom: 6 }}>HydroSense</h1>
           <p style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.5 }}>
             Sales &amp; Revenue Forecasting System<br/>
-            <span style={{ fontSize: 11 }}> Water &amp; Sewerage Company</span>
+            <span style={{ fontSize: 11 }}>Enterprise Water Utility Intelligence</span>
           </p>
         </div>
 

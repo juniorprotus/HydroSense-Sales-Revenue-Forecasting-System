@@ -1,9 +1,9 @@
 # HydroSense Sales & Revenue Forecasting System
 
-An AI-powered digital transformation project for the Kisumu Water & Sewerage Company (KIWASCO). This system provides actionable insights into water demand, revenue collection, and non-revenue water (NRW) losses using Facebook (Meta) Prophet machine learning models.
+An AI-powered digital transformation project for water utility management (HydroSense). This system provides actionable insights into water demand, revenue collection, and non-revenue water (NRW) losses using Facebook (Meta) Prophet machine learning models.
 
 ## Why This Project Exists
-This project was built to transition KIWASCO from reactive to proactive operations. By leveraging historical billing and consumption data, the system predicts future demand, detects anomalies, and forecasts revenue collection.
+This project was built to transition water utilities from reactive to proactive operations. By leveraging historical billing and consumption data, the system predicts future demand, detects anomalies, and forecasts revenue collection.
 
 ## Tech Stack
 - **Frontend**: React (Vite)
@@ -16,7 +16,7 @@ This project was built to transition KIWASCO from reactive to proactive operatio
 
 ## How to Run Locally
 
-Because this project is designed to be **completely free** with zero credit card requirements, the backend uses a local SQLite database file (`kiwasco.db`). This means you don't have to install PostgreSQL or configure any complex database connections!
+Because this project is designed to be **completely free** with zero credit card requirements, the backend uses a local SQLite database file (`hydrosense.db`). This means you don't have to install PostgreSQL or configure any complex database connections!
 
 ### 1. Start the Backend
 The backend powers all the data, Prophet Machine Learning forecasts, and the API.
@@ -54,4 +54,4 @@ This repository includes a `render.yaml` file pre-configured to host both your f
 4. Connect your GitHub repository.
 5. Render will automatically read the `render.yaml` file, install Python, install Node.js, and host both the API and the React frontend completely for free!
 
-*(Note: On Render's free tier, the SQLite database resets on every new code deployment. To fix this, the backend automatically runs `seed.py` to regenerate the KIWASCO demonstration data for the dashboard every time it boots!)*
+*(Note: On Render's free tier, the SQLite database resets on every new code deployment. To fix this, the backend automatically runs `seed.py` to regenerate the HydroSense demonstration data for the dashboard every time it boots!)*

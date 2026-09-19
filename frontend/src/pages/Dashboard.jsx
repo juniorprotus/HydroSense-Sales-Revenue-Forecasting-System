@@ -89,7 +89,7 @@ export default function Dashboard() {
     { label:'Unpaid Bills', value: (summary?.unpaid_bills||0).toLocaleString(), icon: Receipt, color:'red',
       change: 'Requires collection action' },
     { label:'Active Zones', value: summary?.total_zones||0, icon: MapPin, color:'cyan',
-      change: 'KIWASCO service areas' },
+      change: 'HydroSense service areas' },
   ]
 
   // Pie data from zone cards
@@ -103,7 +103,7 @@ export default function Dashboard() {
       <div className="page-header">
         <div>
           <div className="page-header-title">Executive Dashboard</div>
-          <div className="page-header-sub">Real-time KIWASCO performance overview · {new Date().toLocaleDateString('en-KE',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}</div>
+          <div className="page-header-sub">Real-time HydroSense performance overview · {new Date().toLocaleDateString('en-KE',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}</div>
         </div>
         <div style={{ display:'flex', gap:10, alignItems:'center' }}>
           {alerts.length > 0 && (

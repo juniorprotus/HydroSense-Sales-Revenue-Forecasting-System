@@ -59,7 +59,7 @@ export default function Zones() {
     <div>
       <div className="page-header">
         <div>
-          <div className="page-header-title">KIWASCO Service Zones</div>
+          <div className="page-header-title">HydroSense Service Zones</div>
           <div className="page-header-sub">Zone profiles, demographics, and current month performance</div>
         </div>
       </div>

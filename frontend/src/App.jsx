@@ -45,7 +45,7 @@ export default function App() {
   if (loading) return (
     <div className="loading-full">
       <div className="spinner" style={{ borderTopColor: '#0ea5e9' }} />
-      Loading KIWASCO System…
+      Loading HydroSense System…
     </div>
   )
 

@@ -1,5 +1,5 @@
 """
-Forecasting engine for KIWASCO.
+Forecasting engine for HydroSense.
 Uses Holt-Winters Exponential Smoothing (statsmodels) — lightweight,
 reliable, and runs comfortably on free-tier hosting (< 100 MB RAM).
 

@@ -53,7 +53,7 @@ export default function Reports() {
       const url = window.URL.createObjectURL(new Blob([res.data]))
       const a = document.createElement('a')
       a.href = url
-      a.download = `KIWASCO_Report_${year}.xlsx`
+      a.download = `HydroSense_Report_${year}.xlsx`
       a.click()
       window.URL.revokeObjectURL(url)
       toast.success('Report downloaded successfully!')
