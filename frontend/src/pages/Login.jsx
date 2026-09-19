@@ -75,14 +75,16 @@ export default function Login() {
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: 36 }}>
           <div style={{
-            width: 64, height: 64,
-            background: 'linear-gradient(135deg, #0ea5e9, #6366f1)',
-            borderRadius: 16,
+            width: 72, height: 72,
+            background: 'linear-gradient(145deg, #ffffff 0%, #f0f9ff 100%)',
+            borderRadius: 20,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             margin: '0 auto 16px',
-            boxShadow: '0 0 32px rgba(14,165,233,0.3)',
+            boxShadow: '0 0 32px rgba(14,165,233,0.35)',
+            border: '1px solid rgba(14,165,233,0.3)',
+            padding: 8,
           }}>
-            <Droplets size={30} color="white" />
+            <img src="/logo.png" alt="HydroSense Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </div>
           <h1 style={{ fontSize: 26, fontWeight: 800, marginBottom: 6 }}>HydroSense</h1>
           <p style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.5 }}>

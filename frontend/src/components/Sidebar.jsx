@@ -92,8 +92,17 @@ export default function Sidebar() {
       <aside className={`app-sidebar${mobileOpen ? ' mobile-open' : ''}`}>
         {/* Logo */}
         <div className="sidebar-logo">
-          <div className="sidebar-logo-icon">
-            <Droplets size={22} color="white" />
+          <div className="sidebar-logo-icon" style={{
+            width: 44, height: 44,
+            background: 'linear-gradient(145deg, #ffffff 0%, #f0f9ff 100%)',
+            borderRadius: 12,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            marginBottom: 10,
+            boxShadow: '0 0 20px rgba(14,165,233,0.25)',
+            border: '1px solid rgba(14,165,233,0.3)',
+            padding: 4,
+          }}>
+            <img src="/logo.png" alt="HydroSense" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </div>
           <div className="sidebar-logo-title">HydroSense</div>
           <div className="sidebar-logo-sub">FORECASTING SYSTEM</div>

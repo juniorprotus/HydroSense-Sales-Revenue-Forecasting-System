@@ -44,14 +44,16 @@ export default function Register() {
       <div className="login-card fade-up" style={{ maxWidth: 460 }}>
         <div style={{ textAlign: 'center', marginBottom: 28 }}>
           <div style={{
-            width: 56, height: 56,
-            background: 'linear-gradient(135deg, #0ea5e9, #6366f1)',
-            borderRadius: 14,
+            width: 64, height: 64,
+            background: 'linear-gradient(145deg, #ffffff 0%, #f0f9ff 100%)',
+            borderRadius: 18,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             margin: '0 auto 16px',
-            boxShadow: '0 0 24px rgba(14,165,233,0.2)',
+            boxShadow: '0 0 24px rgba(14,165,233,0.25)',
+            border: '1px solid rgba(14,165,233,0.3)',
+            padding: 6,
           }}>
-            <Droplets size={26} color="white" />
+            <img src="/logo.png" alt="HydroSense Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </div>
           <h1 style={{ fontSize: 24, fontWeight: 800, marginBottom: 4 }}>Create Account</h1>
           <p style={{ fontSize: 13, color: 'var(--text-muted)' }}>Join the HydroSense Forecasting Platform</p>
